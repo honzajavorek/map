@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+pylama = "*"
+
+[packages]
+gspread = "*"
+elsa = "*"
+pyopenssl = "*"
+"oauth2client" = "*"
+geocoder = "*"
+python-slugify = "*"
+
+[requires]
+python_version = "3.7"
+
+[scripts]
+freeze = "pipenv run python sample freeze"
+serve = "pipenv run python sample serve"
+deploy = "pipenv run python sample deploy --push"

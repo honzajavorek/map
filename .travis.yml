@@ -1,0 +1,17 @@
+# https://github.com/travis-ci/travis-ci/issues/9815#issuecomment-401756442
+dist: xenial
+sudo: true
+
+language: "python"
+python:
+  - "3.7"
+install:
+  - "pipenv install --dev"
+script:
+  - "pipenv run freeze"
+deploy:
+  provider: "script"
+  script: "pipenv run deploy"
+  on:
+    branch: "master"
+    repo: "honzajavorek/map"
