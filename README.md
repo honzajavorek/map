@@ -45,7 +45,7 @@ A prototype of a static website hosted on [GitHub Pages](https://pages.github.co
 
 1.  Go to your Google Spreadsheet and invite the email from the JSON file's `client_email` field to be able to view the document.
 
-1.  Have **Python 3.7** and [pipenv](https://pipenv.readthedocs.io/. Clone the project and install dependencies:
+1.  Have **Python 3.7** and [pipenv](https://pipenv.readthedocs.io/). Clone the project and install dependencies:
 
     ```shell
     $ pipenv install --dev
