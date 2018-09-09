@@ -64,3 +64,5 @@ A prototype of a static website hosted on [GitHub Pages](https://pages.github.co
     1.  In the <kbd>Environment Variables</kbd> section add all the environment variables from above: `SHEET_URL`, `SHEETS_API_KEY`, `GEOCODING_API_KEY`. Be sure to set the `SHEETS_API_KEY` quoted with apostrophes `'{ ... }'`.
     1.  Add the GitHub token from previous step as a `GITHUB_TOKEN` environment variable.
     1.  [Set a cron job](https://docs.travis-ci.com/user/cron-jobs/) to build the website daily.
+
+1.  Once the build is passing on the `master` branch, go to the project GitHub Pages, e.g. https://honzajavorek.github.io/map/, and see the result.
