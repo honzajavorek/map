@@ -57,4 +57,10 @@ A prototype of a static website hosted on [GitHub Pages](https://pages.github.co
     $ pipenv run serve
     ```
 
-1.  See the `.travis.yml` file on how to configure building such project on [Travis CI](http://travis-ci.org/). Go to the CI project settings and [set a cron job](https://docs.travis-ci.com/user/cron-jobs/) to build the website daily.
+1.  Go to [your GitHub settings](https://github.com/settings/tokens) and generate a new token with the `public_repo` scope. Save the token, you'll need it in the next step.
+
+1.  See the `.travis.yml` file. Go to [Travis CI](http://travis-ci.org/), sign in with GitHub and add a new project with this repository. Go to settings page for the repository (for admins of `honzajavorek/map` it's [here](https://travis-ci.org/honzajavorek/map/settings).
+
+    1.  In the <kbd>Environment Variables</kbd> section add all the environment variables from above: `SHEET_URL`, `SHEETS_API_KEY`, `GEOCODING_API_KEY`
+    1.  Add the GitHub token from previous step as a `GITHUB_TOKEN` environment variable.
+    1.  [Set a cron job](https://docs.travis-ci.com/user/cron-jobs/) to build the website daily.
